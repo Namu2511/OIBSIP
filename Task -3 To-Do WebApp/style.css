@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+body{
+    height: 100vh;
+    background: rgb(249, 220, 220);
+}
+.container{
+    
+position: relative;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(181, 179, 178);
+}
+.addTask{
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+.addTask > input[type="text"]{
+    width: 90%;
+    color: rgb(18, 18, 18);
+    border: none;
+    border-bottom: 2px solid rgb(34, 33, 33);
+    background: none;
+    padding: 10px;
+    font-size: 22px;
+    outline:none;
+}
+.addTask button{
+    margin: 0 10px;
+    background: rgb(246, 144, 144);
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border: 2px solid black k;
+    outline: none;
+    border-radius: 5px  ;
+    cursor: pointer;
+}
+.addTask button:hover{
+    background-color:rgb(246, 102, 102) ;
+    transition: 0.25s ease-in-out;
+}
+.addTask button:active{
+    transform: scale(0.93);
+    
+}
+.Completed{
+    background-color: rgb(248, 151, 151);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Pending{
+    background-color:rgb(248, 151, 151);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pending, .completed{
+    margin: 5px 0;
+    padding: 20px;
+}
+h3{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(65, 62, 62);
+}
+ol{
+    list-style: none;
+}
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+    background: rgb(247, 186, 186);
+    font-size: 18px;
+    counter-increment: my-counter;
+    border-radius: 7px;
+}
+ol.completed li{
+    background:rgb(246, 172, 172);
+}
+ol li::before{
+    content:counter(my-counter);
+    background: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display:inline-block;
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+    margin-right: 0.5rem;
+}
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
